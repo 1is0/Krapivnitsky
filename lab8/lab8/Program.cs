@@ -29,19 +29,7 @@ namespace lab8
             };
             boxer.Prepare();
 
-            //Demonstration of excaption
-            object a = 1;
-            Human human = new Human();
-            Console.WriteLine();
-
-            try
-            {
-                human.CompareTo(a);
-            }
-            catch (ArgumentException e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            
         }
     }
 }
