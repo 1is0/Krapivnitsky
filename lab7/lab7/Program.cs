@@ -59,15 +59,6 @@ namespace lab7
             Console.WriteLine("double b = {1} from Number7 : {0} ", number7.ToString(RationalNumber.RepresentationVariant.Fraction), b);
             Console.WriteLine("int a = {1} from Number8 : {0}\n", number8.ToString(RationalNumber.RepresentationVariant.Fraction), a);
 
-
-            // Demonstration of overrided CompareTo method of IComparable inteface
-            double c = 6.185;
-            double d = c * 0.1 / 0.1;
-            RationalNumber number9 = c;
-            RationalNumber number10 = d;
-            Console.WriteLine("c = {0}\nd = {1}", c, d);
-            Console.WriteLine("Default comparison method of c & d = {0}", c.CompareTo(d) == 0);
-            Console.WriteLine("My comparison method of c & d = {0}", number9.CompareTo(number10) == 0);
         }
     }
 }
